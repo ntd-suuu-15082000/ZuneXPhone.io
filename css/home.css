@@ -1,0 +1,99 @@
+:root {
+  --blue: #1e90ff;
+  --white: #ffffff;
+}
+
+html , body {
+  background-color: var(--white);
+  font-family: 'DM Sans'
+}
+
+.header-container {
+  height: auto;
+  /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+}
+
+.top-advertisement-campaign:not(.close-campaign) {
+  background-image: url(../assets/img/banner.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 8px 0px;
+  height: 40px;
+  transition: margin-top 0.5s ease-in;
+  margin-top: 0px;
+}
+
+.top-advertisement-campaign:has(input[name="close-campain"]:checked) {
+  margin-top: -40px;
+}
+
+
+.title-top-campaign {
+  font-size: 15px;
+}
+
+.buy-now-text {
+  transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+}
+.buy-now-text:hover {
+  color: rgb(220 38 38);
+}
+
+.close-campain {
+  color: white;
+  transform: rotate(90deg);
+  transition: 0.3s;
+}
+
+.close-campain label {
+  cursor: pointer;
+}
+.close-campain:hover {
+  transform: rotate(0deg);
+}
+
+#check-close-campain {
+  display: none;
+}
+
+.tab-menu-bar {
+  height : 110px
+}
+
+.tab-container {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.btn-login {
+  max-width: 140px;
+  transition: transform .5s cubic-bezier(0.165, 0.84, 0.44, 1);
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.btn-login:hover {
+  transform: scale(1.1);
+  font-size: 14px;
+}
+
+.tab-menu-container {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  column-gap: 5rem;
+}
+
+.tab-menu-container li {
+  float: left;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
